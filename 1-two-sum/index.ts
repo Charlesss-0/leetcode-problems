@@ -28,9 +28,9 @@ function twoSum(nums: number[], target: number): number[] {
 	return []
 }
 
-const array: number[] = [2, 5, 8, 3, 6, 3, 5]
+const nums: number[] = [2, 5, 8, 3, 6, 3, 5]
 const target: number = 10
 
-const sum: number[] = twoSum(array, target)
+const sum: number[] = twoSum(nums, target)
 
 console.log(sum)
