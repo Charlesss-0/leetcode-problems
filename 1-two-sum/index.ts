@@ -1,4 +1,4 @@
-// Brute-Force Approach
+// Brute-Force solution
 // function twoSum(nums: number[], target: number): number[] {
 // 	for (let i = 0; i < nums.length; i++) {
 // 		for (let j = 0; j < i; j++) {
@@ -11,8 +11,8 @@
 // 	return []
 // }
 
-// HashMap Approach
-function twoSum(nums: number[], target: number): number[] {
+// HashMap solution
+export function twoSum(nums: number[], target: number): number[] {
 	const hash = new Map()
 
 	for (let i = 0; i < nums.length; i++) {
