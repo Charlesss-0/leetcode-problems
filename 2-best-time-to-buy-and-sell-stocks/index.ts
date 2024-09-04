@@ -1,3 +1,4 @@
+export {}
 // Brute-Force solution
 // function maxProfit(prices: number[]): number {
 // 	let maxProfit: number = 0
@@ -16,7 +17,7 @@
 // }
 
 // One Pass solution
-export function maxProfit(prices: number[]): number {
+function maxProfit(prices: number[]): number {
 	let minPrice: number = Infinity
 	let maxProfit: number = 0
 

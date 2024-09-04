@@ -1,5 +1,6 @@
+export {}
 // Brute-Force solution
-// export function productExceptSelf(nums: number[]): number[] {
+// function productExceptSelf(nums: number[]): number[] {
 // 	let result: number[] = []
 
 // 	for (let i = 0; i < nums.length; i++) {
@@ -17,8 +18,8 @@
 // 	return result
 // }
 
-// One Pass solution
-export function productExceptSelf(nums: number[]): number[] {
+// Two pass solution
+function productExceptSelf(nums: number[]): number[] {
 	let result: number[] = [...Array(nums.length).fill(1)]
 
 	let prefix: number = 1

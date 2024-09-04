@@ -1,5 +1,6 @@
+export {}
 // Brute-Force Approach
-// export function containsDuplicate(nums: number[]): boolean {
+// function containsDuplicate(nums: number[]): boolean {
 // 	for (let i = 0; i < nums.length; i++) {
 // 		for (let j = 0; j < i; j++) {
 // 			if (nums[i] === nums[j]) {
@@ -12,7 +13,7 @@
 // }
 
 // Set solution
-export function containsDuplicate(nums: number[]): boolean {
+function containsDuplicate(nums: number[]): boolean {
 	const hashSet = new Set()
 
 	for (let i = 0; i < nums.length; i++) {
