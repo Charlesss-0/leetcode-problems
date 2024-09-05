@@ -26,24 +26,22 @@ console.log(result)
 /*
 STEPS:
 
-1. Initialize result with the maximum number
+1. Initialize result with the maximum number in the input array
 
 2. Initialize maxProduct, minProduct to 1
 
-3. Iterate through the array starting from zero to the length of the array
+3. Iterate through the input array starting from zero to the length of the array
 
-4. Check if current number is zero, and reset previous maxProduct, minProduct to 1
+4. Temporarily store maxProduct times current number
 
-5. Temporarily store the previous maxProduct times the current number
+5. Update maxProduct: maximum of current number times maxProduct,
+	current number times minProduct, or current number
 
-6. Update maxProduct: maximum of the current number times the previous maxProduct,
-	current number times the minProduct, or current number
+6. Update minProduct: previous maxProduct (tempMax),
+	current number times minProduct, or current number
 
-7. Update minProduct: previous maxProduct (tempMax),
-	current number times the previous minProduct, or current number
-
-8. Update result: maximum result,
+7. Update result: maximum of result,
 	maximum value found so far
 
-9. Return the maximum product found
+8. Return the maximum product found
 */
