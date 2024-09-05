@@ -6,11 +6,11 @@ function maxProduct(nums: number[]): number {
 	let maxProduct: number = 1
 	let minProduct: number = 1
 
-	for (let n of nums) {
-		let tempMax: number = maxProduct * n
+	for (let i = 0; i < nums.length; i++) {
+		let tempMax: number = maxProduct * nums[i]
 
-		maxProduct = Math.max(n * maxProduct, n * minProduct, n)
-		minProduct = Math.min(tempMax, n * minProduct, n)
+		maxProduct = Math.max(nums[i] * maxProduct, nums[i] * minProduct, nums[i])
+		minProduct = Math.min(tempMax, nums[i] * minProduct, nums[i])
 
 		result = Math.max(result, maxProduct)
 	}
