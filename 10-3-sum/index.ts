@@ -36,3 +36,28 @@ const nums = [-1, 0, 1, 2, -1, -4]
 const result = threeSum(nums)
 
 console.log(result)
+
+/*
+STEPS:
+
+1. Sort the input array
+
+2. Initialize empty result array
+
+3. Iterate through the input array starting from zero to the length of the input array
+
+4. If the current index is greater than 0 and the current number is the same as the previous number, skip it
+
+5. Initialize left and right pointer to the first and last index of the input array, respectively
+
+6. While left pointer is less than right pointer:
+	a. Calculate the sum of the current number and the left and right numbers
+	b. If the sum is greater than 0, move the right pointer to the left
+	c. If the sum is less than 0, move the left pointer to the right
+	d. If the sum is equal to 0, push the current number, left number, and right number to the result array,
+	e. While the left pointer is less than the right pointer and the left pointer is equal to the left pointer + 1, increment the left pointer
+	f. While the left pointer is less than the right pointer and the right pointer is equal to the right pointer - 1, decrement the right pointer
+	g. Increment or decrement left and right pointers, respectively
+
+7. Return the result array
+*/
