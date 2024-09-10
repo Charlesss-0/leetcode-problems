@@ -1,3 +1,5 @@
+export {}
+
 function getSum(a: number, b: number): number {
 	while (b !== 0) {
 		const temp: number = (a & b) << 1
@@ -13,7 +15,7 @@ const a = 11
 const b = 9
 const result = getSum(a, b)
 
-console.log(result)
+console.log(a ^ b)
 
 /*
 STEPS:
