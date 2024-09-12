@@ -47,3 +47,6 @@ STEPS:
 
 10. Return the result array
 */
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)

@@ -33,3 +33,6 @@ STEPS:
 
 5. Return false if no duplicate is found
 */
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)

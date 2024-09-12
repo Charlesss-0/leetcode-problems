@@ -41,3 +41,6 @@ STEPS:
 
 6. Return the maximum profit
 */
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)

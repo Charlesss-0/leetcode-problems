@@ -38,3 +38,6 @@ STEPS:
 
 3. If the loop completes without returning, return an empty array
 */
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)

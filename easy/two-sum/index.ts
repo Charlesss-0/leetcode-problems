@@ -40,3 +40,6 @@ STEPS:
 
 7. Return empty array if no index match the target
 */
+
+// Time Complexity: O(n)
+// Space Complexity: O(n)

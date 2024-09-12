@@ -39,3 +39,6 @@ STEPS:
 
 4. Return max result
 */
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)

@@ -45,3 +45,6 @@ STEPS:
 
 8. Return the maximum product found
 */
+
+// Time Complexity: O(n)
+// Space Complexity: O(1)

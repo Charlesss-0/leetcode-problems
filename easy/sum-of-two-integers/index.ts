@@ -27,3 +27,6 @@ STEPS:
 
 2. Return a
 */
+
+// Time Complexity: O(log(n))
+// Space Complexity: O(1)

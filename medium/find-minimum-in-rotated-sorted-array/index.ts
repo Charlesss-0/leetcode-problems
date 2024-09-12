@@ -39,3 +39,6 @@ STEPS:
 
 3. Return the element at left index
 */
+
+// Time Complexity: O(log(n))
+// Space Complexity: O(1)
