@@ -1,22 +1,18 @@
 export {}
 
 function countBits(n: number): number[] {
-	let res: number[] = []
+	const sum: number[] = [...Array(n + 1).fill(0)]
+	let offset: number = 1
 
-	for (let i = 0; i <= n; i++) {
-		let binary = i.toString(2)
-
-		let ones = 0
-		for (let j = 0; j < binary.length; j++) {
-			if (binary[j] === '1') {
-				ones++
-			}
+	for (let i = 1; i <= n; i++) {
+		if (offset * 2 === i) {
+			offset = i
 		}
 
-		res.push(ones)
+		sum[i] = 1 + sum[i - offset]
 	}
 
-	return res
+	return sum
 }
 
 const number = 2
@@ -27,17 +23,16 @@ console.log(result)
 /*
 STEPS:
 
-1. Initialize res to an empty array
+1. Initialize sum to the length of the input number
 
-2. Iterate over the range of 0 to n
-	a. Convert the current index to a binary string
-	b. Initialize ones to 0
-	c. Iterate over the binary string from 0 to the length of the string
-	d. If the current character is 1, increment ones
-	e. Push ones to rest
+2. Initialize offset to 1
 
-3. Return res
+3. Iterate from 1 to the range of the input number:
+	a. If offset times 2 is equal to the input number, update offset to the current index
+	b. Update sum at the current index with 1 added to the sum at the previous index
+
+4. Return sum
 */
 
-// Time Complexity: O(n * log(n))
+// Time Complexity: O(n)
 // Space Complexity: O(n)
