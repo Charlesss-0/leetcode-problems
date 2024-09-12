@@ -4,7 +4,7 @@ function hammingWeight(n: number): number {
 	let weight: number = 0
 
 	while (n) {
-		n &= n - 1
+		n = n & (n - 1)
 		weight++
 	}
 

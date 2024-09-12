@@ -15,7 +15,7 @@ const a = 11
 const b = 9
 const result = getSum(a, b)
 
-console.log(a ^ b)
+console.log(result)
 
 /*
 STEPS:
